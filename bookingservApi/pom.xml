@@ -49,28 +49,41 @@
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
         </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+        </dependency>
+
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.jsonschema2pojo</groupId>
-                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-                <version>1.0.2</version>
-                <configuration>
-                    <sourceDirectory>${project.basedir}/src/main/resources/v1/schema</sourceDirectory>
-                    <targetPackage>com.paypal.bfs.test.bookingserv.api.model</targetPackage>
-                    <useCommonsLang3>true</useCommonsLang3>
-                    <includeHashcodeAndEquals>false</includeHashcodeAndEquals>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.jsonschema2pojo</groupId>-->
+<!--                <artifactId>jsonschema2pojo-maven-plugin</artifactId>-->
+<!--                <version>1.0.2</version>-->
+<!--                <configuration>-->
+<!--                    <sourceDirectory>${project.basedir}/src/main/resources/v1/schema</sourceDirectory>-->
+<!--                    <targetPackage>com.paypal.bfs.test.bookingserv.api.model</targetPackage>-->
+<!--                    <useCommonsLang3>true</useCommonsLang3>-->
+<!--                    <includeHashcodeAndEquals>false</includeHashcodeAndEquals>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>generate</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 </project>
